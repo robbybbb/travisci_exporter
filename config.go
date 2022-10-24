@@ -9,7 +9,7 @@ type config struct {
 }
 
 type organization struct {
-	OverrideUrl string `yaml:"name"`
+	OverrideUrl string `yaml:"url"`
 	Name        string `yaml:"name"`
 	Token       string `yaml:"token"`
 	UseOrg      bool   `yaml:"org,omitempty"`
