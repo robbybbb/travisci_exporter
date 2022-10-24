@@ -92,7 +92,7 @@ func main() {
 	http.Handle("/metrics", h)
 
 	// Block on HTTP server
-	log.Printf("listenting on %s", *flagAddress)
+	log.Printf("listening on %s", *flagAddress)
 	if err := http.ListenAndServe(*flagAddress, nil); err != nil {
 		log.Fatalf("ERROR binding to %s: %v", *flagAddress, err)
 	}
