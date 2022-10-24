@@ -72,7 +72,9 @@ func main() {
 		org := config.Organizations[i]
 
 		var client *travis.Client
-		if org.UseOrg {
+		if org.OverrideUrl != "" {
+			client = travis.NewClient(org.OverrideUrl, org.Token)
+		} else if org.UseOrg {
 			client = travis.NewClient(travis.ApiOrgUrl, org.Token)
 		} else {
 			client = travis.NewClient(travis.ApiComUrl, org.Token)
