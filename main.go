@@ -15,7 +15,7 @@ import (
 
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
-	"github.com/shuheiktgw/go-travis"
+	"github.com/robbybbb/go-travis"
 	"gopkg.in/yaml.v2"
 )
 
